@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente Optimizador de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dango¡</h1>
+            <p>Encuentra los mejores precios con inteligencia artificial</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="chat-section">
+                <h2>💬 Chat con el Agente</h2>
+                <div class="chat-container" id="chatContainer">
+                    <div class="message bot-message">
+                        ¡Hola! Soy tu agente optimizador de compras Dango¡. Dime qué necesitas comprar y te ayudo a encontrar las mejores ofertas. Por ejemplo: "Necesito comprar leche, pan y huevos" o "Quiero hacer una cena para 4 personas"
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="chat-input" id="userInput" placeholder="Escribe qué necesitas comprar...">
+                    <button class="send-btn" onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h2 class="results-title">🎯 Recomendaciones Optimizadas</h2>
+                <div id="recommendations"></div>
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Analizando mejores precios...</p>
+                </div>
+                <div class="stats-section" id="stats" style="display: none;">
+                    <div class="total-savings" id="totalSavings">s/. 0</div>
+                    <p>Ahorro total estimado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="scipts.js"></script>
+</body>
+</html>
